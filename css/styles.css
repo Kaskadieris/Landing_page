@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80");
+  font-family: sans-serif;
+  color: white;
+}
+
+#header {
+  background: #101820ff;
+  color: white;
+  position: fixed;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+#header-img {
+  max-width: 50px;
+  height: auto;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-bar {
+  width: 50%;
+}
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: 800;
+}
+
+#header > img {
+  display: block;
+}
+
+main {
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #000000 0%, #2d3436 74%);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote {
+  padding-top: 5%;
+  display: block;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+#form-section {
+  margin-top: 10%;
+  width: 90%;
+  padding: 10%;
+  text-align: center;
+}
+
+#submit {
+  width: 150px;
+  background: darkgrey;
+  color: white;
+  border: 1px solid darkgrey;
+  border-radius: 5%;
+  font-weight: 500;
+}
+
+#submit:hover,
+#submit:focus {
+  opacity: 0.7;
+}
+
+#video-section {
+  width: 90%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+#video {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  bottom: 5%;
+  right: 5%;
+  width: 90%;
+  height: 90%;
+  z-index: 1;
+}
+
+#price-section {
+  width: 90%;
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+#price {
+  text-align: center;
+  color: grey;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#price-section > div > img {
+  max-width: 200px;
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  #price-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar {
+    width: 100%;
+  }
+}
