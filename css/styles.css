@@ -146,4 +146,11 @@ main {
   #nav-bar {
     width: 100%;
   }
+
+  #form-section {
+    margin-top: 15%;
+    width: 90%;
+    padding: 10%;
+    text-align: center;
+  }
 }
